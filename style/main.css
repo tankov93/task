@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #434343, #000000);
+  background: linear-gradient(to left, #434343, #000000);
+}
+
+h1 {
+  font-size: 10vw;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #fefefe;
+  background: #1e9600;
+  background: -webkit-linear-gradient(to right, #ff0000, #fff200, #1e9600);
+  background: linear-gradient(to right, #ff0000, #fff200, #1e9600);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient{
+    0% {
+background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 00% 50% ;
+
+    }
+}
